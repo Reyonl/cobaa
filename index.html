@@ -20,6 +20,43 @@
   </head>
 
   <body>
+
+    <style>
+      /* Responsive Card Grid */
+      .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 90px;
+        justify-content: center;
+      }
+    
+      .card-item {
+        flex: 1 1 calc(44.444% - 20px); /* Tiga kolom */
+        max-width: calc(44.444% - 20px);
+      }
+    
+      .card-item img {
+        width: 100%;
+        height: auto;
+        max-height: 600px; /* Sesuaikan tinggi gambar agar lebih besar */
+        object-fit: cover;
+      }
+    
+      /* Adjust for smaller screens */
+      @media (max-width: 992px) {
+        .card-item {
+          flex: 1 1 calc(50% - 20px); /* Dua kolom */
+          max-width: calc(50% - 20px);
+        }
+      }
+    
+      @media (max-width: 576px) {
+        .card-item {
+          flex: 1 1 100%; /* Satu kolom */
+          max-width: 100%;
+        }
+      }
+    </style>
     <div id="page-wraper">
       <!-- Sidebar Menu -->
       <div class="responsive-nav">
@@ -213,90 +250,56 @@
               </div>
               
               <!-- Sertifikat section -->
-              <div class="section-heading">
-                <h2>Sertifikat Nadzel Ramadania</h2>
-                <div class="line-dec"></div>
-                <span>Sertifikat solo learn yang sudah saya kumpulkan<span>
-              </div>
-              <div class="row">
-            <div class="isotope-wrapper">
-
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/sertif (1).jpeg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/sertif (1).jpeg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                      >
-                        <i class="fa fa-search"></i>
-                      </a>
-                      <h4>Sertifikat HTML Nadzel Ramadania</h4>
-                      <!-- Add the button here -->
-                      <a href="https://www.sololearn.com/certificates/CC-0PLNXNMW">
-                        <button>Goto Sertifikat HTML</button>
-                      </a>
-                    </figcaption>
-                  </figure>
+              <section class="section my-work">
+                <div class="container">
+                  <div class="section-heading">
+                    <h2>Sertifikat Nadzel Ramadania</h2>
+                    <div class="line-dec"></div>
+                    <span>Sertifikat Solo Learn yang sudah saya kumpulkan</span>
+                  </div>
+                  <div class="card-grid">
+                    <!-- Certificate 1 -->
+                    <div class="card-item">
+                      <figure class="snip1321">
+                        <img src="assets/images/sertif (1).jpeg" alt="Certificate Image 1" />
+                        <figcaption>
+                          <a href="assets/images/sertif (1).jpeg" data-lightbox="image-1" data-title="HTML Certificate">
+                            <i class="fa fa-search"></i>
+                          </a>
+                          <h4>Sertifikat HTML Nadzel Ramadania</h4>
+                          <a href="https://www.sololearn.com/certificates/CC-0PLNXNMW"><button>Goto Sertifikat HTML</button></a>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <!-- Certificate 2 -->
+                    <div class="card-item">
+                      <figure class="snip1321">
+                        <img src="assets/images/sertif (3).jpeg" alt="Certificate Image 2" />
+                        <figcaption>
+                          <a href="assets/images/sertif (3).jpeg" data-lightbox="image-1" data-title="CSS Certificate">
+                            <i class="fa fa-search"></i>
+                          </a>
+                          <h4>Sertifikat CSS Nadzel Ramadania</h4>
+                          <a href="https://www.sololearn.com/certificates/CC-115LTH5P"><button>Goto Sertifikat CSS</button></a>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <!-- Certificate 3 -->
+                    <div class="card-item">
+                      <figure class="snip1321">
+                        <img src="assets/images/sertif (2).jpeg" alt="Certificate Image 3" />
+                        <figcaption>
+                          <a href="assets/images/sertif (2).jpeg" data-lightbox="image-1" data-title="JavaScript Certificate">
+                            <i class="fa fa-search"></i>
+                          </a>
+                          <h4>Sertifikat JavaScript Nadzel Ramadania</h4>
+                          <a href="https://www.sololearn.com/certificates/CC-VXCRSYHE"><button>Goto Sertifikat JavaScript</button></a>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/sertif (3).jpeg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/sertif (3).jpeg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                      >
-                        <i class="fa fa-search"></i>
-                      </a>
-                      <h4>Sertifikat CSS Nadzel Ramadania</h4>
-                      
-                      <!-- Add the button here -->
-                      <a href="https://www.sololearn.com/certificates/CC-115LTH5P">
-                        <button>Goto Sertifikat CSS </button>
-                      </a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/sertif (2).jpeg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/sertif (2).jpeg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                      >
-                        <i class="fa fa-search"></i>
-                      </a>
-                      <h4>Sertifikat JavaScript Nadzel Ramadania</h4>
-                      
-                      <!-- Add the button here -->
-                      <a href="https://www.sololearn.com/certificates/CC-VXCRSYHE">
-                        <button>Goto Sertifikat JavasScript </button>
-                      </a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
+              </section>
                 
 
                 
